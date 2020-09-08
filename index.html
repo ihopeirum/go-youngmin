@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset_meyer.css">
   <link rel="stylesheet" href="basic.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script defer src="main_jq.js"></script>
   <title>Kym | Portfolio</title>
 </head>
 
@@ -16,22 +18,22 @@
     <nav class="gnb">
       <!-- NavBar on Tab/PC -->
       <div class="gnb_web">
-        <div class="gnb_logo"><img src="img/logo_kym_1by3.png" width="150px" alt="고영민 포트폴리오"></div>
+        <div class="gnb_logo top_logo"><img src="img/logo_kym_1by3.png" width="150px" alt="고영민 포트폴리오"></div>
         <div class="gnb_menu_web">
           <ul>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SKILLS</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li class="goto_about">ABOUT</li>
+            <li class="goto_skills">SKILLS</li>
+            <li class="goto_portfolio">PORTFOLIO</li>
+            <li class="goto_contact">CONTACT</li>
           </ul>
         </div>
-        <div class="gnb_tit">
+        <div class=" gnb_tit">
           <h3>Kym's Portfolio</h3>
         </div>
       </div>
       <!-- NavBar on Mobile -->
       <div class="gnb_mobile">
-        <div class="gnb_logo"><img src="img/logo_kym_1by3.png" width="150px" alt="고영민 포트폴리오"></div>
+        <div class="gnb_logo top_logo"><img src="img/logo_kym_1by3.png" width="125px" alt="고영민 포트폴리오"></div>
         <div class="gnb_menubtn">
           <div class="stick stick1"></div>
           <div class="stick stick2"></div>
@@ -39,16 +41,25 @@
         </div>
         <div class="gnb_menu_mob">
           <ul>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SKILLS</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li class="goto_about">ABOUT</li>
+            <li class="goto_skills">SKILLS</li>
+            <li class="goto_portfolio">PORTFOLIO</li>
+            <li class="goto_contact">CONTACT</li>
+            <li>
+              <ul class="gnb_menu_mob_icon">
+                <li><a href="mailto:ihopeirum@gmail.com"><img src="img/icon_mail_circle.png" alt="이메일" width="35px"></a>
+                </li>
+                <li><a href="https://github.com/ihopeirum" target="_blank"><img src="img/icon-github-1-240.png"
+                      alt="깃허브" width="35px"></a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- main 화면-->
   <article class="main prllx1">
     <div class="main_prologue">
       <h2>새로운 길 위에서</h2>
@@ -56,8 +67,9 @@
     </div>
   </article>
 
+  <!-- 본문 - About -->
   <article class="intro_wrap">
-    <h1 class="menu_tit">About</h1>
+    <h1 class="menu_tit loc_about">About</h1>
 
     <section class="intro intro_MLscreen">
       <div class="intro_item career_tit">
@@ -81,7 +93,8 @@
       </div>
     </section>
 
-    <h1 class="menu_tit">Skills</h1>
+    <!-- 본문 - Skills -->
+    <h1 class="menu_tit loc_skills">Skills</h1>
     <section class="intro intro_skill">
 
       <div class="skill_item skill_develop">
@@ -97,7 +110,7 @@
           </div>
           <div class="pct_item jswrap">
             <div class="pct_js"></div>
-            <h2 class="pct_txt">70%</h2>
+            <h2 class="pct_txt">68%</h2>
           </div>
         </div>
         <h2 class="sub_tit sub_tit_skl">Development</h2>
@@ -146,9 +159,10 @@
     </section>
   </article>
 
+  <!-- 본문 - Portfolio -->
   <div class="portfolio prllx2">
     <div class="portfolio_tit">
-      <h1 class="menu_tit">Portfolio</h1>
+      <h1 class="menu_tit loc_portfolio">Portfolio</h1>
     </div>
   </div>
   <article class="portfolio_wrap">
@@ -286,7 +300,6 @@
           <span class="modal_close">&times;</span>
           <div class="modal_tit">
             <h2>제품 상세페이지 디자인</h2>
-            <!-- <p><a href="">자세히 보기</a></p> -->
           </div>
           <dl class="modal_txt">
             <dt class="modal_txt_item modal_subtit">구분</dt>
@@ -320,9 +333,10 @@
     </div>
   </article>
 
+  <!-- 본문 - Contact -->
   <div class="contact prllx3">
     <div class="contact_tit">
-      <h1 class="menu_tit" id="menu_tit_contact">Contact</h1>
+      <h1 class="menu_tit loc_contact" id="menu_tit_contact">Contact</h1>
     </div>
 
     <article class="contact_wrap">
@@ -330,26 +344,29 @@
         I Hope to See You Soon!
       </p>
       <ul class="sub_desc contact_desc">
-        <li><img src="img/icon-code-2-240.png" alt="웹퍼블리셔,개발자" width="25px"> Web Publisher | Developer &nbsp;&nbsp;</li>
-        <li><img src="img/icon-accessibility-2-240.png" alt="이름" width="25px"> 고영민 | Kho Youngmin
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-        <li><img src="img/icon_mail_square.png" alt="이메일" width="25px"> Mail | ihopeirum@gmail.com &nbsp;</li>
-        <li><img src="img/icon_mob2_square.png" alt="연락처" width="25px"> C.P | +82-10-2065-0216
+        <li><img src="img/icon-code-2-240.png" alt="웹퍼블리셔,개발자" width="25px"> Web Publisher | Developer
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><img src="img/icon-accessibility-2-240.png" alt="이름" width="25px"> 고영민 | Kho Youngmin
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><img src="img/icon_mail_square.png" alt="이메일" width="25px"> Mail | ihopeirum@gmail.com
+          &nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><img src="img/icon_mob2_square.png" alt="연락처" width="25px"> C.P | +82-10-2065-0216
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li><img src="img/icon-location-1-240.png" alt="거주지" width="25px"> Location | 경기도, South Korea</li>
       </ul>
     </article>
 
+    <!-- 푸터 - 바닥글 -->
     <footer>
       <div class="footer_wrap">
         <div class="ft_item ft_logo_mob"><img src="img/logo_kym_1by3.png" alt="고영민 포트폴리오" width="100%"></div>
         <div class="ft_item ft_logo_web"><img src="img/logo_kym_3by3.png" alt="고영민 포트폴리오" width="20%"></div>
         <div class="ft_item ft_gnbwrap">
           <ul class="ft_gnb">
-            <li><a href="">About</a></li>
-            | <li><a href="">Skills</a></li>
-            | <li><a href="">Portfolio</a></li>
-            | <li><a href="">Contact</a></li>
+            <li class="goto_about">About</li>
+            | <li class="goto_skills">Skills</li>
+            | <li class="goto_portfolio">Portfolio</li>
+            | <li class="goto_contact">Contact</li>
           </ul>
         </div>
         <p class="ft_item ft_desc">
@@ -358,14 +375,15 @@
         </p>
         <div class="ft_item ft_iconwrap">
           <ul class="ft_icon">
-            <li><img src="img/icon_mail_circle.png" alt="이메일" width="35px"></li>
-            <li><img src="img/icon-github-1-240.png" alt="깃허브" width="35px"></li>
+            <li><a href="mailto:ihopeirum@gmail.com"><img src="img/icon_mail_circle.png" alt="이메일" width="35px"></a>
+            </li>
+            <li><a href="https://github.com/ihopeirum" target="_blank"><img src="img/icon-github-1-240.png" alt="깃허브"
+                  width="35px"></a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-
-
   </div>
 
 </body>
