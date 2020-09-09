@@ -143,5 +143,12 @@ textarea,
 select,
 button,
 table {
-  font-family: 'Nanum Gothic', Rubik, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+   font-family:rubik,
+   'Nanum Gothic',
+   AppleSDGothicNeo-Regular,
+   'Malgun Gothic',
+   '맑은 고딕',
+   dotum,
+   '돋움',
+   sans-serif;
 } */

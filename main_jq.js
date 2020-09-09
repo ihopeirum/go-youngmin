@@ -54,5 +54,38 @@ $(document).ready(function () {
     $(".gnb_menu_mob").hide();
   });
 
+  // ++++++++ Modal ++++++++
+
+  const modal_on = document.querySelectorAll(".img_item")
+  const modal_contents = document.querySelectorAll(".modal_box")
+  const modal_off = document.querySelectorAll(".modal_close")
+
+
+  // 1. 클릭 한 것이 몇 번째 modal_on 인지 확인
+  // 2. 1번과 같은 순서의 것으로 modal_contents 꺼내라.
+
+
+
+
+  // for (var i = 0; i < modal_on.length; i++) {
+  //   modal_on[i].addEventListener('click', function () {
+  //     console.log("ok")
+  //     console.log(modal_contents)
+  //     console.log(modal_on)
+  //     if (modal_contents(i).style.display === "none") {
+  //       modal_contents.style.display = "block";
+  //     }
+  //   });
+  // }
+
+
+  // menubtn.addEventListener('click', function () {
+  //   if (menu.style.display === "none") {
+  //     menu.style.display = "block";
+  //   } else {
+  //     menu.style.display = "none";
+  //   }
+  // });
+
 
 });
