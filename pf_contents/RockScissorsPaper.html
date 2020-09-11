@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>가위바위보</title>
+  <style media="screen">
+    h1 {
+      text-align: center;
+      color: magenta;
+      font-size: 42px;
+    }
+
+    .game {
+      text-align: center;
+    }
+
+    button {
+      width: 130px;
+      height: 35px;
+      margin: 10px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+
+    .box {
+      height: 320px;
+      text-align: center;
+    }
+
+    img {
+      width: 500px;
+      height: 250px;
+      border: 8px solid #FF99FF;
+    }
+
+    #imgBox_L,
+    #imgBox_R {
+      display: inline-block;
+      margin: 0 100px 0 0;
+    }
+
+    #imgBox_R {
+      margin-right: 0;
+    }
+
+    .btn {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>커피쏘기 내기 한 판!</h1>
+  </header>
+  <nav>
+    <div class="game">
+      <button id="srp" type="button">START</button>
+    </div>
+  </nav>
+  <article>
+    <div class="box">
+      <div id="imgBox_L">
+        <img id="img_L" src="img/srp3.jpg" alt="">
+        <div>
+          <h2>Player1</h2>
+        </div>
+      </div>
+      <div id="imgBox_R">
+        <img id="img_R" src="img/srp3.jpg" alt="">
+        <div>
+          <h2>Player2</h2>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button id="stp" type="button">STOP!</button>
+    </div>
+  </article>
+
+  <script>
+    var bt_srp = document.getElementById('srp');
+    var bt_stp = document.getElementById('stp');
+    var imgs_L = document.getElementById('img_L');
+    var imgs_R = document.getElementById('img_R');
+    var itv_L;
+    var itv_R;
+    var gmbt = document.getElementById('srp');
+
+    bt_srp.addEventListener('click', function (ran) {
+      itv_L = setInterval(function () {
+        var num = Math.floor(Math.random() * 6) + 1;
+        console.log(ran.target.id + num);
+        imgs_L.src = 'img/' + ran.target.id + num + '.jpg';
+      }, 80);
+    });
+
+    bt_srp.addEventListener('click', function (ran) {
+      itv_R = setInterval(function () {
+        var num = Math.floor(Math.random() * 6) + 1;
+        console.log(ran.target.id + num);
+        imgs_R.src = 'img/' + ran.target.id + num + '.jpg';
+      }, 80);
+    });
+
+    bt_stp.addEventListener('click', function () {
+      clearInterval(itv_L);
+      clearInterval(itv_R);
+    });
+  </script>
+
+</body>
+
+</html>

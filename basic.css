@@ -100,6 +100,93 @@ body {
   margin-right: 5vw;
 }
 
+/* modal */
+.modal_box {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 8.5vh;
+  left: 0;
+  overflow: auto;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal_contents {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid gray;
+  width: 50vw;
+  height: 85vh;
+  overflow: auto;
+}
+
+.modal_close {
+  color: silver;
+  float: right;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_tit {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal_tit h2 {
+  font-size: 2.5em;
+  margin-bottom: 1.5vh;
+}
+
+.modal_tit p {
+  display: inline-block;
+  font-size: 1em;
+  padding: 0.8vh 0.5vw;
+  border: 1px solid dimgray;
+  border-radius: 6px;
+}
+
+.modal_tit p:hover {
+  background-color: #292929;
+}
+
+.modal_tit a:hover {
+  color: white;
+}
+
+.modal_txt {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.8vh 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  line-height: 2.5vh;
+}
+
+.modal_img_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal_img_wrap img {
+  width: 100%;
+}
+
+.modal_subtit {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 320px) {
 
   /* 모바일용(min320) : 공통적용사항 */
@@ -669,6 +756,14 @@ body {
     padding: 0.8vh 0.5vw;
     border: 1px solid dimgray;
     border-radius: 6px;
+  }
+
+  .modal_tit p:hover {
+    background-color: #292929;
+  }
+
+  .modal_tit a:hover {
+    color: white;
   }
 
   .modal_txt {

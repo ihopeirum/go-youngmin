@@ -1,0 +1,314 @@
+header {
+  width: 100%;
+  border-bottom: 1px solid silver;
+}
+
+.top {
+  width: 1146px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.top .top_logo {
+  width: 130px;
+  display: inline-block;
+}
+
+.top .top_logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.top_join {
+  display: inline-block;
+  padding-left: 667px;
+  padding-bottom: 8px;
+}
+
+.top_join li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.top_icons {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.normal li {
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.normal li:hover {
+  opacity: 0;
+}
+
+.grn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.grn li {
+  display: inline-block;
+  margin-left: 1px;
+}
+
+/* //top */
+
+/* nav */
+nav {
+  width: 1146px;
+  padding: 30px 0 20px 0;
+  margin: 0 auto;
+}
+
+.gnb_left,
+.gnb_left li,
+.gnb_right,
+.gnb_right li,
+.gnb_search {
+  display: inline-block;
+}
+
+.gnb_left li {
+  margin-right: 50px;
+}
+
+.gnb_right {
+  float: right;
+  padding-right: 50px;
+}
+
+.gnb_right li {
+  margin-left: 50px;
+}
+
+nav a {
+  font-size: 17px;
+  font-weight: bold;
+  color: #595959;
+}
+
+nav a:hover {
+  color: mediumseagreen;
+}
+
+.gnb_search {
+  position: absolute;
+  top: 160px;
+  left: 1470px;
+}
+
+/* //nav */
+
+/* section_img slide */
+.img_slide {
+  width: 1146px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* //section_img slide */
+
+/* qmenu */
+.qmenu {
+  width: 1146px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.qmenu .col {
+  flex-basis: 24%;
+}
+
+.col-a,
+.col-b {
+  height: 120px;
+  padding: 18px 0 0 18px;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.qmenu .col-a {
+  margin-bottom: 6.5%;
+}
+
+.qmenu .col2 {
+  padding: 18px 0 100px 18px;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.col2:hover {
+  cursor: pointer;
+}
+
+.qmenu h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.qmenu h4,
+p {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.qmenu span {
+  font-weight: bold;
+}
+
+.qmenu .col_img {
+  display: inline-block;
+  position: absolute;
+  left: 195px;
+  top: 62px;
+}
+
+.qmenu .col_img2 {
+  display: inline-block;
+  position: absolute;
+  left: 190px;
+  top: 195px;
+}
+
+/* //qmenu */
+
+/* eventwrap */
+.eventwrap {
+  width: 1146px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.eventwrap .prod {
+  margin-top: 8px;
+  text-align: center;
+  border: 1px solid silver;
+}
+
+.prod img {
+  width: 42%;
+}
+
+.prod h2 {
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 14px 0 14px 0;
+  border-top: 1px solid silver;
+}
+
+/* //enevtwrap */
+
+/* bttm */
+.bttm {
+  width: 1146px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.bttm h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* //bttm */
+
+/* ntcbar */
+.ntcbar {
+  width: 1146px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  /* position: fixed; */
+  bottom: 0;
+  left: 350px;
+}
+
+.ntcbar .notice {
+  display: inline-block;
+  width: 15%;
+  background-color: mediumseagreen;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.ntcbar .subject {
+  display: inline-block;
+  width: 85%;
+  background-color: whitesmoke;
+  font-size: 20px;
+  padding: 20px 0 20px 30px;
+  position: relative;
+}
+
+.ntcbar_btn ul {
+  position: absolute;
+  left: 860px;
+  top: 25px;
+}
+
+.ntcbar_btn li {
+  float: left;
+  margin-right: 8px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 40px 0 30px 0;
+}
+
+.footer_wrap {
+  width: 1146px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer_logobox {
+  padding-top: 40px;
+}
+
+.footer_infowrap {
+  color: white;
+  width: 80%;
+  padding-left: 50px;
+}
+
+.footer_info1 li {
+  display: inline-block;
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+}
+
+.footer_info2 li {
+  display: inline-block;
+  font-size: 11px;
+  color: silver;
+  padding: 0 10px;
+}
+
+.footer_scr {
+  margin: 20px 0 0 10px;
+}
+
+.footer_infobtn {
+  padding-top: 35px;
+}

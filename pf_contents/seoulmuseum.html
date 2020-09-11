@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset_meyer.css">
+  <link rel="stylesheet" href="seoulmuseum_style.css">
+  <!-- <script defer src="seoulmuseum.js"></script> -->
+  <title>Copy | 서울역사박물관</title>
+</head>
+
+<body>
+  <header>
+    <div class="tnb_container">
+      <div class="tnb_wrap">
+        <div class="seoul_logo"><img src="img/seoul_citylogo.png" alt=""></div>
+        <div class="seoul_notice mob_hddn"></div>
+        <div class="seoul_menu">
+          <ul class="seoul_menu_ul">
+            <li>서울소식</li>
+            <li>응답소</li>
+            <li>정보공개</li>
+            <li>분야별정보</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GNB min1200 screen -->
+    <div class="nvb_container web_hddn">
+      <div class="nvb_wrap">
+        <div class="museum_logo"><img src="img/smh_logo.png" alt="" width="60%"></div>
+        <div class="nvb_tool">
+          <select name="Language" id="tbar_lang">
+            <option value="Language">Language</option>
+            <option value="English">English(영문)</option>
+            <option value="Japanese">Japanese(일문)</option>
+            <option value="chinese">chinese(중문)</option>
+          </select>
+        </div>
+        <div class="gnb_btn">
+          <div class="stick"></div>
+          <div class="stick"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GNB max1199 screen -->
+    <!-- <div class="mob_nvb_container mob_hddn">
+      <div class="mob_nvb_wrap">
+        <div class="mob_museum_logo"><img src="img/smh_logo.png" alt="" width="100%"></div>
+        <div class="mob_nvb_close">&times;</div>
+        <div class="mob_nvb_lgn"></div>
+        <div class="mob_nvb_sns"></div>
+        <div class="mob_gnb"></div>
+      </div>
+    </div> -->
+
+  </header>
+
+  <section class="main_banner"><img src="img/smh_banner04.png" alt=""></section>
+  <article class="contents contents_wrap">
+    <section class="item01 contents_item">
+      <div class="item01_a">
+        <div class="item01_img"><img src="img/smh_item_clock.png" alt=""></div>
+        <span>임시휴관</span>
+        <p class="item_desc">평일</p>
+        <p class="item_desc">10:00-18:00</p>
+        <p class="item_desc">토*일 공휴일</p>
+        <p class="item_desc">09:00-18:00</p>
+        <p class="item_desc">휴관일</p>
+        <p class="item_desc">1월1일, 매주월요일</p>
+      </div>
+      <div class="item01_b">
+        <p class="item_tit" id="schd_week">주간일정&nbsp;
+          <span><img id="btn_zoom" src="img/smh_tbar_zoomin.png" alt=""></span></p>
+        <p class="item_tit schd_month">이달의 일정</p>
+        <table class="item01_schedule">
+          <tr>
+            <th>일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="item02 contents_item"><img src="img/smh_item2.jpg" alt=""></section>
+
+    <section class="item03 contents_item">
+      <div class="item03_a">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'notice')">공지사항</button>
+          <button class="tablinks" onclick="openTab(event, 'press')">보도/언론</button>
+          <button class="tablinks" onclick="openTab(event, 'wanted')">공고/채용</button>
+        </div>
+        <div id="notice" class="tabcontent">
+          <p>공지사항 입니다.</p>
+          <p>공지사항 입니다.</p>
+          <p>공지사항 입니다.</p>
+          <p>공지사항 입니다.</p>
+          <p>공지사항 입니다.</p>
+        </div>
+        <!-- <div id="press" class="tabcontent">
+          <p>보도/언론 자료입니다.</p>
+          <p>보도/언론 자료입니다.</p>
+          <p>보도/언론 자료입니다.</p>
+          <p>보도/언론 자료입니다.</p>
+          <p>보도/언론 자료입니다.</p>
+        </div>
+        <div id="wanted" class="tabcontent">
+          <p>모집/채용 공고입니다.</p>
+          <p>모집/채용 공고입니다.</p>
+          <p>모집/채용 공고입니다.</p>
+          <p>모집/채용 공고입니다.</p>
+          <p>모집/채용 공고입니다.</p>
+        </div> -->
+      </div>
+      <div class="item03_b">
+        <div class="item03_qmenuwrap">
+          <div class="item03_qmenu">
+            <div class="qmenu_img"><img src="img/smh_ico_favor1.png" alt=""> </div>
+            <p class="qmenu_tit">관람안내</p>
+          </div>
+          <div class="item03_qmenu">
+            <div class="qmenu_img"><img src="img/smh_ico_favor2.png" alt=""> </div>
+            <p class="qmenu_tit">오시는길</p>
+          </div>
+          <div class="item03_qmenu">
+            <div class="qmenu_img"><img src="img/smh_ico_favor3.png" alt=""> </div>
+            <p class="qmenu_tit">시설안내</p>
+          </div>
+          <div class="item03_qmenu">
+            <div class="qmenu_img"><img src="img/smh_ico_favor4.png" alt=""> </div>
+            <p class="qmenu_tit">온라인교육</p>
+          </div>
+          <div class="item03_qmenu">
+            <div class="qmenu_img"><img src="img/smh_ico_favor5.png" alt=""> </div>
+            <p class="qmenu_tit">대관예약</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="item04 contents_item">
+      <div class="item04_a">
+        <p class="item_tit">교육</p>
+        <span>+</span>
+      </div>
+      <ul class="item04_b">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, incidunt!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, qui?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </section>
+
+    <section class="item05 contents_item">
+      <div class="left">
+        <p class="item_tit">문화행사</p>
+        <span>+</span>
+      </div>
+      <div class="right">
+        <div class="page">1/1</div>
+        <ul class="btns">
+          <li><img src="img/btn_prev.png" alt=""></li>
+          <li><img src="img/btn_pause.png" alt=""></li>
+          <li><img src="img/btn_next.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="item05_img">
+        <img src="img/smh_item_05.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="item06 contents_item">
+      <div class="left">
+        <p class="item_tit">팝업존</p>
+        <span>+</span>
+      </div>
+      <div class="right">
+        <div class="page">1/1</div>
+        <ul class="btns">
+          <li><img src="img/btn_prev.png" alt=""></li>
+          <li><img src="img/btn_pause.png" alt=""></li>
+          <li><img src="img/btn_next.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="item06_img">
+        <img src="img/smh_item_06.png" alt="">
+      </div>
+    </section>
+
+    <section class="item07 contents_item">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'donate')">기증유물</button>
+        <button class="tablinks" onclick="openTab(event, 'main')">주요유물</button>
+        <button class="tablinks" onclick="openTab(event, 'collection')">소장유물</button>
+      </div>
+
+      <div id="donate" class="tabcontent">
+        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+        <div class="mid_img">
+          <img src="img/smh_item07.jpg" alt="">
+          <p>기증유물</p>
+        </div>
+        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
+      </div>
+
+      <!-- <div id="main" class="tabcontent">
+        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+        <div class="mid_img">
+          <img src="img/smh_item07.jpg" alt="">
+          <p>주요유물</p>
+        </div>
+        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
+      </div>
+
+      <div id="collection" class="tabcontent">
+        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+        <div class="mid_img">
+          <img src="img/smh_item07.jpg" alt="">
+          <p>소장유물</p>
+        </div>
+        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
+      </div> -->
+
+    </section>
+    <section class="item08 contents_item">
+      <div class="item08_item">
+        <img src="img/smh_ico_shortcut1.png" alt="">
+        <p class="item08_tit">서울역사아카이브</p>
+      </div>
+      <div class="item08_item">
+        <img src="img/smh_ico_shortcut2.png" alt="">
+        <p class="item08_tit">발간도서</p>
+      </div>
+      <div class="item08_item">
+        <img src="img/smh_ico_shortcut3.png" alt="">
+        <p class="item08_tit">서울역사자료실</p>
+      </div>
+      <div class="item08_item">
+        <img src="img/smh_ico_shortcut4.png" alt="">
+        <p class="item08_tit">온라인전시관</p>
+      </div>
+    </section>
+
+    <section class="item09 contents_item">
+      <img src="img/smh_item09.png" alt="">
+    </section>
+  </article>
+
+  <section class="partners_wrap">
+    <div class="partners">
+      <ul class="partners_imgwrap">
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+        <li><img src="img/smh_item2.jpg" alt=""></li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="fnb_wrap">
+      <ul>
+        <li class="fnb_tit">개인정보처리방침</li>
+        | <li class="fnb_tit">영상정보처리기기(CCTV)관리방침</li>
+        | <li class="fnb_tit">뷰어다운로드</li>
+        | <li class="fnb_tit">배너연결안내</li>
+        | <li class="fnb_tit">오류신고및개선의견</li>
+        | <li class="fnb_tit">RSS</li>
+      </ul>
+    </div>
+    <div class="familysite">
+      <select name="familysite" id="fnb_fsite">
+        <option value="web">관련사이트</option>
+        <option value="kids">어린이 홈페이지</option>
+        <option value="chung">청계천박물관 홈페이지</option>
+        <option value="hy">한양도성박물관</option>
+      </select>
+    </div>
+    <div class="info">
+      <p class="fnb_add">03177 서울특별시 종로구 새문안로 55 서울역사박물관 02-724-0274~6
+        COPYRIGHT(C) 2011. SEOUL MUSEUM OF HISTORY ALL RIGHTS RESERVED </p>
+    </div>
+  </footer>
+
+  <!-- <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script> -->
+</body>
+
+</html>
