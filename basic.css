@@ -333,7 +333,7 @@ body {
 
   /* 모바일용(min320) : Portfoliio */
   .modal_box {
-    display: none;
+    /* display: none; */
   }
 
   .portfolio_tit {
@@ -357,6 +357,34 @@ body {
   .sub_tit_pf {
     font-weight: bold;
   }
+
+  /* 모바일용(min320) : Portfoliio - modal*/
+
+  .modal_contents {
+    padding: 10px;
+    width: 90vw;
+    height: 85vh;
+  }
+
+  .modal_tit h2 {
+    font-size: 1.2em;
+    margin-bottom: 1.5vh;
+  }
+
+  .modal_tit p {
+    font-size: 0.8em;
+    padding: 0.8vh 1vw;
+    border: 1px solid dimgray;
+    border-radius: 4px;
+  }
+
+  .modal_txt {
+    font-size: 0.9em;
+    padding: 1.2vh 0;
+    grid-template-columns: 1fr 2fr;
+    line-height: 2.5vh;
+  }
+
 
   /* 모바일용(min320) : Contact */
   .contact_wrap {
