@@ -858,6 +858,10 @@ body {
     cursor: pointer;
   }
 
+  .ft_gnb li:hover {
+    cursor: pointer
+  }
+
   .ft_desc {
     grid-column: 2/3;
   }
