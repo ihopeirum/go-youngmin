@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="도예공방 카페토루, 도자기 수강 및 일일체험 가능, 파주시 여행꼭지점 카페, 서울근교 당일치기 여행">
+  <meta name="author" content="https://ihopeirum.github.io/go-youngmin/">
+  <meta name="keywords" content="토루, 도예공방토루, 토루카페, 파주도예공방, ">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="도예공방 토루">
+  <meta property="og:image" content="http://toruart.net/img/logo_toru4.png">
+  <meta property="og:description" content="도예공방 카페토루, 도자기 수강 및 일일체험 가능, 파주시 여행꼭지점 카페, 서울근교 당일치기 여행">
+  <meta property="og:url" content="http://toruart.net">
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=ce7b8b8ac593c7a14a93617f463c6cea">
+  </script>
+  <script src="ver5_script_web.js"></script>
+  <link rel="stylesheet" href="style5_web_fix.css">
+  <link rel="stylesheet" href="style5_map.css">
+
+  <title>도예공방 토루</title>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <header class="pc_menubar">
+      <div class="menubar_logo">
+        <h1>도예공방 <img src="img/logo_toru2_small.png" alt="로고. 누르면 맨위로 갑니다." height="50px"></h1>
+      </div>
+      <div class="menubar_list">
+        <ul>
+          <li class="menu">
+            <h3>공방소개</h3>
+          </li>
+          <li class="menu">
+            <h3>체험안내</h3>
+          </li>
+          <li class="menu">
+            <h3>공방사진</h3>
+          </li>
+          <li class="menu">
+            <h3>마실거리</h3>
+          </li>
+          <li class="menu">
+            <h3>오시는 길</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="menubar_sns">
+        <ul>
+          <li><a href="https://blog.naver.com/cj5130" target="_blank"><img src="img/icon_blog1.png" alt="네이버 블로그로 갑니다."
+                height="63px"></a></li>
+          <li><a href="https://www.instagram.com/toruart/" target="_blank"><img src="img/icon_insta1.png"
+                alt="인스타그램으로 갑니다." height="60px"></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="hiddenbox"></div>
+    <section class="main">
+      <div class="slide_wrap">
+        <ul>
+          <li><img src="img/banner5.jpg" alt="대표이미지. 토루에서 꿈을 빚다" height="100%"></li>
+          <li><img src="img/banner1.gif" alt="토루공방 건물외관 모습" height="100%"></li>
+          <li><img src="img/banner2.jpg" alt="대표이미지. 작품 연인" height="100%"></li>
+          <li><img src="img/banner3.jpg" alt="대표이미지. 작품 세 도자기" height="100%"></li>
+          <li><img src="img/banner4.jpg" alt="여행꼭지점 카페 안내 배너" height="100%"></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div class="prxwrap_intro">
+      <div class="parallrax"></div>
+      <div class="titleWrap">
+        <h1>공방소개</h1>
+        <h2>About Toru</h2>
+      </div>
+    </div>
+    <section class="intro">
+      <div class="w1200">
+        <article class="hello">
+          <div class="hello_say">
+            <div class="hello_img">
+              <img src="img/bg_hello.jpg" alt="공방 앞 낙조 풍경사진입니다." width="800px">
+            </div>
+            <div class="hello_txt">
+              <p><b>안녕하세요, 토루지기입니다. <br>
+                  <br>
+                  토루 도예공방은<br>
+                  1986년 작은 공방으로 시작하여<br>
+                  지금의 모습이 되었습니다.<br>
+                  <br>
+                  공릉천이 흘러가고<br>
+                  철새들도 쉬어가는<br>
+                  고즈넉한 소나무 동산에<br>
+                  아름다운 낙조를 바라보며<br>
+                  <br>
+                  직접 담근<br>
+                  건강한 수제 음료와 함께<br>
+                  힐링할 수 있는<br>
+                  토루로<br>
+                  여러분을 초대합니다.<br>
+              </p>
+            </div>
+          </div>
+          <div class="hello_contact">
+            <div class="helcon_txt">
+              <h3>010-9596-5130 <img src="img/icon_call2.png" alt="전화번호" width="40x"></h3>
+              <h3>@toruart <img src="img/icon_insta2.png" alt="인스타그램 계정" width="40px"></h3>
+              <h3>toruarttoru@gmail.com <img src="img/icon_mail2.png" alt="이메일" width="40px"></h3>
+            </div>
+            <div class="helcon_img">
+              <img id="rightimg" src="img/bg_hello2.jpg" alt="공방 앞 갈대밭 풍경사진입니다." width="500px" height="250px">
+            </div>
+          </div>
+        </article>
+        <article class="travelzzum">
+          <img src="img/travelzzum.png" alt="여행꼭지점카페에 대한 소개 이미지입니다." width="100%">
+        </article>
+      </div>
+    </section>
+
+
+    <div class="prxwrap_cls">
+      <div class="parallrax"></div>
+      <div class="titleWrap">
+        <h1>체험안내</h1>
+        <h2>Reservation</h2>
+      </div>
+    </div>
+    <section class="class">
+      <div class="w1200">
+        <article class="class_wrap">
+          <div class="img_wrap">
+            <a href="https://blog.naver.com/cj5130" target="_blank">
+              <img src="img/class_basic.png" alt="클릭하시면 네이버 블로그의 예약안내 상세페이지로 연결됩니다."></a>
+          </div>
+          <div class="img_wrap">
+            <a href="https://blog.naver.com/cj5130" target="_blank">
+              <img src="img/class_oneday.png" alt="클릭하시면 네이버 블로그의 예약안내 상세페이지로 연결됩니다."></a>
+          </div>
+        </article>
+        <footer class="class_footer">
+          <div class="text">
+            <h1>체험예약문의</h1>
+            <h3>체험 후 제작 <strong>완성까지 한 달</strong>이 소요됩니다.<br>
+              완성 된 도자기는 <strong>공방 방문 또는 배송으로 수령 가능</strong>합니다.<br><br>
+              <img src="img/icon_call2.png" alt="전화번호" width="40px"> 010 - 9596 - 5130</h3>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <div class="prxwrap_gall">
+      <div class="parallrax"></div>
+      <div class="titleWrap">
+        <h1>공방사진</h1>
+        <h2>Gallery</h2>
+      </div>
+    </div>
+    <section class="gallery">
+      <div class="w1200">
+        <article class="hashtag">
+          <ul>
+            <li>#파주공방</li>
+            <li>#파주여행</li>
+            <li>#도자기공방</li><br>
+            <li>#이색데이트</li>
+            <li>#이색카페</li>
+          </ul>
+        </article>
+        <article class="gallpic_wrap">
+          <div class="pic"><a href="https://www.instagram.com/p/BzC7u0rJyeN/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190623.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/BxC4XO2Je_E/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190505.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/Bzk8vZOp863/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190706.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/B079S68p9VZ/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190809.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/B1WqWayprWN/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190820.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/CCflloup5Hg/?utm_source=ig_web_button_share_sheet"
+              target="_blank"><img src="img/200711.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/B8eHsSPp99i/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/200212.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/Bze4MEfJET2/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/190704.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/BHWL8drDNwg/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/160702.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href=""><img src="img/gall01.jpg" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다."
+                width="390px"></a></div>
+          <div class="pic"><a href=""><img src="img/gall03.jpg" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다."
+                width="390px"></a></div>
+          <div class="pic"><a href=""><img src="img/gall02.jpg" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다."
+                width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/BR3QOHblyH1/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/170320.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/B75BcaVJ_4t/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/200129.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+          <div class="pic"><a href="https://www.instagram.com/p/CBE7RrzpVA7/?utm_source=ig_web_copy_link"
+              target="_blank"><img src="img/200606.JPG" alt="공방 대표 이미지.클릭하면 인스타그램 페이지로 이동합니다." width="390px"></a></div>
+        </article>
+      </div>
+    </section>
+
+
+    <div class="prxwrap_cafe">
+      <div class="parallrax"></div>
+      <div class="titleWrap">
+        <h1>마실거리</h1>
+        <h2>Beverage</h2>
+      </div>
+    </div>
+    <section class="cafe">
+      <div class="w1200">
+        <article class="tea_wrap">
+          <div class="tea_left">
+            <ul>
+              <li><img src="img/tea_coffe_web.jpg" alt="케냐AA 사진입니다." width="600px"></li>
+              <li><img src="img/tea_mogwa_web.jpg" alt="모과차 사진입니다." width="600px"></li>
+            </ul>
+          </div>
+          <div class="tea_right">
+            <ul>
+              <li><img src="img/tea_sol_web.jpg" alt="솔잎차 사진입니다." width="600px"></li>
+              <li><img src="img/tea_dechoo_web.jpg" alt="대추차 사진입니다." width="600px"></li>
+            </ul>
+          </div>
+        </article>
+        <footer class="cafe_footer">
+          <div class="txt">
+            <h2>수제음료</h2>
+            <h3>더 건강한 토루의 담금차와<br>
+              신선한 원두로 내린
+              핸드드립 커피를 즐겨보세요.</h3>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <div class="prxwrap_cnt">
+      <div class="parallrax"></div>
+      <div class="titleWrap">
+        <h1>오시는 길</h1>
+        <h2>Contact</h2>
+      </div>
+    </div>
+    <section class="location">
+      <div class="w1200">
+        <div id="map" style="width:100%;height:420px;"></div>
+        <footer class="location_footer">
+          <div class="txt">
+            <h1><img src="img/icon_open2.png" alt="영업시간" width="50px">
+              매일 10:00 ~ 20:00 *매주 월요일 휴무<br>
+              <img src="img/icon_location2.png" alt="주소" width="50px">
+              경기도 파주시 오도로 160-16 토루공방<br>
+              <img src="img/icon_call2.png" alt="전화번호" width="50px">
+              &nbsp;010 - 9596 - 5130</h1>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <footer class="bzid">
+      <div class="bzid_logo"><img src="img/logo_toru4.png" alt="토루공방 로고입니다." width="85px"></div>
+      <div class="bzid_txt">
+        <p>상호 : 도예공방 토루<br>
+          주소 : 경기도 파주시 오도로 160-16<br>
+          전화번호 : 010-9596-5130<br>
+          이메일 : paramsan@hanmail.net<br>
+          계좌번호 : 국민 445301-04-133847 (토루 오경석)<br>
+          Copyright 2020.Team Asgard, ITEC. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

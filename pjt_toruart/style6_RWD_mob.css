@@ -1,0 +1,546 @@
+/* +++++ 각 페이지 공통적용 사항 +++++ */
+h1, h2, h3, li, p{
+    font-family: 'toru_default'
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.w800 {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: indigo; */
+}
+@media (max-width:850px){
+
+    body{background-color: whitesmoke;}
+    body, h1, h2, h3, ul, p, ul, li{margin:0; padding:0}
+    @font-face{
+        font-family: 'toru_default';
+        src: url('font/MapoFlowerIsland.woff')format('woff');
+    }
+    
+    
+    .titleWrap{
+        /* background-color: red; */
+        width: 100%;
+        float: left;
+        position: absolute;
+        top: 55%;
+    }
+    .titleWrap h1{
+        font-size: 10vw;
+        color: white;
+        display: inline-block;
+        text-shadow: 0 0 8px black;
+        padding-left: 8%;
+    }
+    .titleWrap h2{
+        font-size: 6vw;
+        color:white;
+        display: inline-block;
+        text-shadow: 0 0 8px black;
+    }
+    /* +++++ 각 페이지 공통적용 사항 +++++ */
+    
+    
+    /* +++++ 메뉴바 +++++ */
+    .hidden{display: none;}
+     .mo_menubar{
+         display: block;
+         width: 100%;
+         background: rgba(250,240,230,0.7);
+         position:fixed;
+         z-index: 11;
+     }
+
+    .position{
+        position: relative;
+        width: 100%; 
+        height:100%;
+    }
+     .samsun{
+         width: 10%;
+         height: 6vh;
+         /* background-color: yellow; */
+         float: left;
+         margin:1.5% 0 1.5% 3%;
+         /* position: relative; */
+     }
+     .samsun:hover{cursor:pointer;}
+     .nameistoru{
+         width:50%;
+         text-align: center;
+         float:left;
+         margin: 3.5% 0 2.5% 4%;
+     }
+     .nameistoru:hover{cursor: pointer;}
+     .nameistoru h1{
+         font-size: 6vw;
+     }
+     .mo_snstop ul{
+         display: inline-block;
+         width: 32%;
+         text-align: center;
+         margin: 1% 0 1% 0;
+    }
+     .mo_snstop li{
+         list-style:none;
+         display: inline;
+     }
+     .mo_snstop li img{
+         width: 35%;
+         padding: 0 2% 0 0;
+         display:inline-block;
+        }
+     .mo_snstop li:last-child{
+         margin-left:0;
+         margin-right:0;
+     }
+     .stic{
+         width: 10%; height:3%;
+         border-radius: 5vw;
+         background-color: #404040;
+         position: absolute;
+         transition: opacity 0.6s, transform 0.5s, top 0.4s, bottom 0.4s;
+         z-index: 20;
+     }
+     .stic:first-child{
+         top:25%;
+     }
+     .stic:last-child{
+         bottom:25%;
+     }
+     .stic:nth-child(2){
+         top:50%; transform: translateY(-50%);
+     }
+     .sticAni{
+         width: 10%; height:3%;
+         background-color: #404040;
+         position: absolute;
+         transition: opacity 0.6s, transform 0.5s, top 0.4s, bottom 0.4s;
+     }
+     .sticAni:first-child{
+         top:50%;
+         transform: translateY(-50%) rotate(45deg);
+     }
+     .sticAni:last-child{
+         top:50%;
+         transform: translateY(-50%) rotate(-45deg);
+     }
+     .sticAni:nth-child(2){
+         opacity: 0;
+         top:50%; transform: translateY(-50%);
+     }
+     .hidden{
+         width: 100%;
+         background-color: rgba(250,240,230,1.0);
+         text-align: center;
+     }
+     .hidden li{
+         list-style: none;
+         /* display: inline; */
+        }
+     .hidden h3:hover{cursor: pointer;}
+     .hidden .toplogo{
+         width:100%;
+         /* background-color: gold; */
+     }
+     #hidden_logo{
+         width: 15%;
+         margin: 5% auto;
+     }
+
+     .hidden h3{
+         font-size: 7vw;
+         display: inline-block;
+         margin-bottom: 6%;
+         border-bottom:2px solid #D2B48C;
+     }
+     .hiddenmenu h3{cursor: pointer}
+     .momenubar_sns ul{margin-left: 35%;}
+     .momenubar_sns li{
+         list-style: none;
+         float:left;
+         margin: 5% 8.2%;
+     }
+     .momenubar_sns li:first-child{margin-left:0;}
+     .momenubar_call{display: block;}
+     .momenubar_call img{
+         width: 9%;
+         vertical-align: middle;
+        }
+     .momenubar_call h2{
+         font-size: 6.5vw;
+         margin-left: -8%;
+         padding-bottom: 10%;
+     }
+    /* +++++ 메뉴바 +++++ */
+    
+    
+    /* +++++ MAIN +++++ */
+    .hiddenbox{
+        height: 8vh;
+        width:100%;
+        /* background-color: red; */
+        z-index: 100;
+    }
+    .main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .slide_wrap{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .slide_wrap ul{
+        width: 500%;
+        position: absolute;
+        top: 0; left: -1920px;
+    }
+    .slide_wrap ul li{
+        height: 100%;
+        width: calc(100%/5);
+        float: left;
+        list-style: none;
+    }
+    .slide_wrap ul li img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* +++++ MAIN +++++ */
+    
+    
+    /* +++++ 공방소개 +++++ */
+    .intro{
+        width: 100%;
+        /* background-color: orangered; */
+    }
+    .intro_title{
+        width: 100%;
+        height: 20vh;
+        position: relative;
+    }
+    .intro_title .parallrax{
+        width: 100%;
+        height: 20vh;
+        margin-top: 10%;
+        background-image: url("img/prx_hello.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hello{
+        width: 100%;
+        margin: 10% auto;
+        margin-bottom:5%;
+        /* background-color: yellowgreen; */
+    }
+    .hello_say{
+        text-align: center;
+        width: 100%;
+        background: url("img/mo_bg_hello.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .hello_img img {
+        width: 100%;
+    }
+    .hello_txt{
+        width: 100%;
+        display: inline-block;
+        /* background-color: yellow; */
+    }
+    .hello_txt p{
+        padding-top: 6%;
+        text-align: center;
+        font-size: 4vw;
+        display: inline-block;
+    }
+    .hello_txth3{
+        text-align: right;
+        font-size: 3.2vw;
+        color: white;
+        margin: 10% 5% 0 0;
+    }
+    .hello_txth3 img{
+        vertical-align: middle;
+        width: 8%;
+    }
+    
+    .travelzzum{
+        width: 90%;
+        margin: 10% auto;
+        /* background-color: blue; */
+    }
+    /* +++++ 공방소개 +++++ */
+    
+    
+    /* +++++ 체험안내 +++++ */
+    .class{
+        width: 100%;
+        /* background-color: royalblue; */
+    }
+    .class_title{
+        width: 100%;
+        height: 20vh;
+        /* background-color: mediumblue; */
+        position: relative;
+    }
+    .class_title .parallrax{
+        width: 100%;
+        height: 20vh;
+        background-image: url("img/prx_class.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .class_wrap{
+        width: 100%;
+        margin-top: 10%;
+        /* background-color: white; */
+        text-align: center;
+    }
+    .img_wrap{margin-bottom: 5%;}
+    .img_wrap:last-child{margin-bottom:0;}
+    .img_wrap img{width: 90%;}
+    .img_wrap img:hover{opacity: 0.6}
+    
+    .class_footer{
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #B0C4DE; */
+        background-image: url(img/bg_brush.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .class_footer .text{
+        text-align: center;
+        padding: 5% 0 12% 0;
+    }
+    
+    .class_footer .text img{
+        vertical-align: middle;
+        width:5%;
+    }
+    .class_footer .text h1{
+        padding-top: 10%;
+        font-size: 3.6vw;
+    }
+    .class_footer .text h3{
+        font-size: 3vw;
+        line-height: 4.5vw;
+        padding-top:2%;
+    }
+    /* +++++ 체험안내 +++++ */
+    
+    
+    /* +++++ 공방사진 +++++ */
+    .gallery{
+        width: 100%;
+        /* background-color: seagreen; */
+    }
+    .gallery_title{
+        width: 100%;
+        height: 20vh;
+        /* background-color: #006400; */
+        position: relative;
+    }
+    .gallery_title .parallrax{
+        width: 100%;
+        height: 20vh;
+        background-image: url("img/prx_gall.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hashtag ul{
+        text-align: center;
+        margin: 5% auto;
+    }
+    .hashtag li{
+        display: inline-block;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left:5%;        
+    }
+    .hashtag li:first-child{margin-left:0}
+    .hashtag li:nth-child(5){margin-left:0}
+    .gallpic_wrap{
+        width: 100%;
+        /* background-color: magenta; */
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 10%;
+
+    }
+    .pic{
+        width: 32%;
+        margin: 0.2% 0.2%;
+        padding-right:0.2%;
+        padding-left: 0.5%;
+        /* background-color: yellowgreen; */
+        float: left;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    .pic img{
+        width:100%;
+        display: inline-block;
+    }
+    .pic img:hover{
+        opacity: 0.5;
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    /* +++++ 공방사진 +++++ */
+    
+    
+    /* +++++ 마실거리 +++++ */
+    .cafe{
+        width: 100%;
+        /* background-color: indianred; */
+    }
+    .cafe_title{
+        width: 100%;
+        height: 20vh;
+        /* background-color: #DC143C; */
+        position: relative;
+    }
+    .cafe_title .parallrax{
+        width: 100%;
+        height: 20vh;
+        background-image: url("img/prx_cafe.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .tea_wrap{
+        width: 100%;
+        margin-top: 10%;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    .tea_left, .tea_right{
+        width: 50%;
+        float: left;
+        /* background-color: red; */
+        text-align: center;
+    }
+    .tea_left li, .tea_right li{
+        list-style: none;
+        padding-top: 0;
+        margin: 2% 1.5%;
+    }
+    .tea_left li img, .tea_right li img{
+        max-width: 100%;
+    }
+    .cafe_footer{
+        width: 100%;
+        height: 24vh;
+        margin-bottom: 12%; 
+        /* background-color: #B22222; */
+        background-image: url(img/bg_brush.png);
+        margin: 10% auto;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .cafe_footer .txt{
+        padding: 20% auto;
+    }
+    .cafe_footer .txt h2{
+        font-size: 4vw;
+        padding-top: 10%;
+    }
+    .cafe_footer .txt h3{
+        padding-top: 2%;
+        font-size: 3.6vw;
+        line-height: 6vw;
+    }
+    /* +++++ 마실거리 +++++ */
+    
+    
+    /* +++++ 오시는길 +++++ */
+    .location{
+        width: 100%;
+        /* background-color:peru; */
+    }
+    .location_title{
+        width: 100%;
+        height: 20vh;
+        /* background-color: #8B4513; */
+        position: relative;
+    }
+    .location_title .parallrax{
+        width: 100%;
+        height: 20vh;
+        background-image: url("img/prx_cnt.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #map{
+        width: 100%;
+        margin-top: 10%;
+        background-color: #FFFACD;
+    }
+    .location_footer{
+        width: 100%;
+        background-image: url(img/bg_brush.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .location_footer .txt{
+        padding: 18% 0 10% 15%;
+
+    }
+    .location_footer .txt h1{
+        font-size: 3.6vw;
+        line-height: 6vw;
+    }
+    .location_footer .txt span{
+        font-size: 2.8vw;
+    }
+    .location_footer .txt img{
+        vertical-align: middle;
+        width: 5%;
+    }
+    /* +++++ 오시는길 +++++ */
+    
+    
+    /* +++++ Footer +++++ */
+    .bzid{
+        width: 100%;
+        background-color: #FAF0E6;
+        text-align: center;
+    }
+    
+    .bzid .bzid_txt{
+        display: inline-block;
+        margin-left:0;
+        text-align: left;
+        padding: 2.5% 0 2.5% 0;
+    }
+    .bzid .bzid_txt p{
+        display: inline-block;
+        font-size: 2vw;
+        font-weight: 900;
+        color: #a9a9a9
+    }
+    /* +++++ 오시는길 +++++ */
+}
