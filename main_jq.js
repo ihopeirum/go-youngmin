@@ -177,7 +177,7 @@ $(document).ready(function () {
   //   }
   // }
 
-  // 에러 : display 속성을 못 찾음 / for문 안의 변수가 정의되지 않았음...
+  // // 에러 : display 속성을 못 찾음 / for문 안의 변수가 정의되지 않았음...
 
 
 });
