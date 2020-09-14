@@ -153,31 +153,29 @@ $(document).ready(function () {
   }
 
 
-  // Modal 한번에 해결하기 도대체 어떻게 하지. (중첩for문 / 배열 알아보기)
+  // JavaScript 코드 한번에 짜기...
 
-  // 1. 클릭 한 것이 몇 번째 modal_on 인지 확인
-  // 2. 1번과 같은 순서의 것으로 modal_contents 꺼내라.
+  // var modalOn = document.querySelectorAll('.img_item');
+  // var modalBox = document.querySelectorAll('.modal_box');
+  // var modalOff = document.querySelectorAll('.modal_close');
 
-  // const modal_on = document.querySelectorAll(".img_item");
-  // const modal_contents = document.querySelectorAll(".modal_box");
-  // const modal_off = document.querySelectorAll(".modal_close");
+  // for (i = 0; i < modalOn.length; i++) {
+  //   modalOn[i].addEventListener('click', modalBoxHandler)
+  // }
 
-  // console.log(modal_contents)
-  // console.log(modal_on.length)
-
-  // for (var i = 0; i < modal_on.length; i++) {
-  //   for (var j = 0; j < modal_contents.length; j++) {
-  //     modal_on[i].addEventListener('click', function () {
-  //       if (modal_contents[j].style.display === "none") {
-  //         modal_contents.style.display = "block";
-  //       } else {
-  //         modal_contents.style.display = "none";
-  //       }
-  //     })
+  // function modalBoxHandler() {
+  //   for (j = 0; j < modalBox.length; j++) {
+  //     if (modalBox[j].style.display === 'none') {
+  //       modalBox[j].style.display = 'block';
+  //     } else {
+  //       modalBox[j].style.display = 'none';
+  //     }
   //   }
   // }
 
-  // // 에러 : display 속성을 못 찾음 / for문 안의 변수가 정의되지 않았음...
+  // j의 문제는 무엇인가
+  // 모든 modalOn 버튼이 맨 마지막 modalBox 만 켜준다...
+
 
 
 });
