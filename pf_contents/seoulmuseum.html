@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset_meyer.css">
   <link rel="stylesheet" href="seoulmuseum_style.css">
-  <!-- <script defer src="seoulmuseum.js"></script> -->
+  <script defer src="seoulmuseum.js"></script>
   <title>Copy | 서울역사박물관</title>
 </head>
 
@@ -77,26 +77,26 @@
         <p class="item_tit" id="schd_week">주간일정&nbsp;
           <span><img id="btn_zoom" src="img/smh_tbar_zoomin.png" alt=""></span></p>
         <p class="item_tit schd_month">이달의 일정</p>
-        <table class="item01_schedule">
-          <tr>
-            <th>일</th>
-            <th>월</th>
-            <th>화</th>
-            <th>수</th>
-            <th>목</th>
-            <th>금</th>
-            <th>토</th>
-          </tr>
-          <tr>
-            <td>06</td>
-            <td>07</td>
-            <td>08</td>
-            <td>09</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-          </tr>
-        </table>
+        <div class="item01_calwrap">
+          <div class="calendar">
+            <p id="sunday">일</p>
+            <p>월</p>
+            <p>화</p>
+            <p>수</p>
+            <p>목</p>
+            <p>금</p>
+            <p>토</p>
+          </div>
+          <div class="calendar">
+            <p>06</p>
+            <p>07</p>
+            <p>08</p>
+            <p>09</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -104,10 +104,10 @@
 
     <section class="item03 contents_item">
       <div class="item03_a">
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'notice')">공지사항</button>
-          <button class="tablinks" onclick="openTab(event, 'press')">보도/언론</button>
-          <button class="tablinks" onclick="openTab(event, 'wanted')">공고/채용</button>
+        <div class="tab_wrap">
+          <div class="tablink">공지사항</div>
+          <div class="tablink">보도/언론</div>
+          <div class="tablink">공고/채용</div>
         </div>
         <div id="notice" class="tabcontent">
           <p>공지사항 입니다.</p>
@@ -116,7 +116,7 @@
           <p>공지사항 입니다.</p>
           <p>공지사항 입니다.</p>
         </div>
-        <!-- <div id="press" class="tabcontent">
+        <div id="press" class="tabcontent">
           <p>보도/언론 자료입니다.</p>
           <p>보도/언론 자료입니다.</p>
           <p>보도/언론 자료입니다.</p>
@@ -129,7 +129,7 @@
           <p>모집/채용 공고입니다.</p>
           <p>모집/채용 공고입니다.</p>
           <p>모집/채용 공고입니다.</p>
-        </div> -->
+        </div>
       </div>
       <div class="item03_b">
         <div class="item03_qmenuwrap">
@@ -224,7 +224,7 @@
         <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
       </div>
 
-      <!-- <div id="main" class="tabcontent">
+      <div id="main" class="tabcontent">
         <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
         <div class="mid_img">
           <img src="img/smh_item07.jpg" alt="">
@@ -240,7 +240,7 @@
           <p>소장유물</p>
         </div>
         <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
-      </div> -->
+      </div>
 
     </section>
     <section class="item08 contents_item">

@@ -1,33 +1,23 @@
 window.onload = function () {
 
-  var tabbtn = document.getElementsByTagName("button")
+  var tab_btn = document.querySelectorAll(".tablink");
+  var tab_cont = document.querySelectorAll(".tabcontent");
 
-  tabbtn.addEventListener('click', function () {
-    var i, tabcontent, tablinks;
+  function tabHandler() {
+    var active = document.querySelectorAll('.active')
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+    if (active) {
+      active.classList.remove('active');
     }
+    this.classList.add('active');
+  }
 
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+  for (i = 0; i < tab_btn.length; i++) {
+    console.log(tab_btn[i]);
+    tab_btn[i].addEventListener('click', tabHandler());
+  }
 
-  })
-
-
-  // function openTab(evt, cityName)
-
-
-
-
-
-
-
+  // error : "remove", active.classList is undefined.
 
 
 

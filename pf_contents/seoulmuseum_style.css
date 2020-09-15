@@ -61,7 +61,7 @@
   /* *** min320 Main Banner */
   .main_banner {
     width: 98vw;
-    height: 40vh;
+    height: 46vh;
     overflow: hidden;
   }
 
@@ -73,6 +73,7 @@
   .contents_wrap {
     display: grid;
     grid-template-columns: auto;
+    column-gap: 30px;
   }
 
   .contents_item {
@@ -85,8 +86,13 @@
     grid-template-columns: 1fr 2.5fr;
   }
 
+  .item01_img {
+    margin-bottom: 14px;
+  }
+
   .item01_a span {
     align-self: center;
+    padding-bottom: 16px;
   }
 
   .item_desc {
@@ -99,11 +105,11 @@
   }
 
   #schd_week {
-    display: inline;
+    display: inline-block;
   }
 
   .schd_month {
-    float: right;
+    display: inline-block;
     background-color: black;
     color: white;
     font-size: 0.9em;
@@ -111,10 +117,31 @@
     height: 0.1vh;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-left: 44.5vw;
   }
 
-  .item01_schedule {
-    margin: 2vh auto;
+  .item01_calwrap {
+    /* width: 100vw; */
+    padding: 0 6vw;
+    background-color: #f0f0f0;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+  }
+
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 10px;
+    padding: 1.5vh 0;
+    text-align: center;
+  }
+
+  .calendar:first-child {
+    border-bottom: 1px solid silver;
+  }
+
+  #sunday {
+    color: red
   }
 
 
@@ -130,28 +157,31 @@
 
   /* ***min320 item03 */
 
-  .tab {
+  .tab_wrap {
     overflow: hidden;
     border-top: 1px solid silver;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
   }
 
-  .tab button {
+  .tablink {
     background-color: inherit;
     float: left;
     border: none;
     cursor: pointer;
-    padding: 1.5vh 8.5vw;
-    color: gray;
+    padding: 1.5vh 7.4vw;
+    color: #b4b4b4;
   }
 
-  .tab button.active {
-    border-bottom: 2px solid red;
+  .active {
+    display: block;
+    border-left 2px solid red;
+    border-top 2px solid red;
+    border-right 2px solid red;
     color: red;
   }
 
   .tabcontent {
-    /* display: none; */
+    display: none;
     padding: 1.5vh 2vw;
     border-top: 1px solid red;
     line-height: 2em;
