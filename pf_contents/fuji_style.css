@@ -111,7 +111,36 @@ nav a:hover {
   width: 1146px;
   margin: 0 auto;
   padding-bottom: 30px;
+  overflow: hidden;
+  position: relative;
 }
+
+.imgwrap {
+  width: 500%;
+  /* position: absolute; */
+}
+
+.imgwrap li {
+  display: inline-block;
+  width: calc(100%/5);
+}
+
+.btn {
+  position: absolute;
+  top: 40%;
+  /* background-color: aqua; */
+  width: 55px;
+  height: 10%;
+}
+
+.btn:last-child {
+  right: 0;
+}
+
+.btn img {
+  width: 100%
+}
+
 
 /* //section_img slide */
 
