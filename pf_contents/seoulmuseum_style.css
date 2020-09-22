@@ -157,35 +157,50 @@
 
   /* ***min320 item03 */
 
-  .tab_wrap {
-    overflow: hidden;
+  .tab_list_wrap {
     border-top: 1px solid silver;
+    box-sizing: border-box;
     /* background-color: whitesmoke; */
   }
 
-  .tablink {
+  .tab_list {
     background-color: inherit;
-    float: left;
+    display: inline-block;
+    width: 32.4%;
+    text-align: center;
+    box-sizing: border-box;
     border: none;
     cursor: pointer;
-    padding: 1.5vh 7.4vw;
+    padding: 1.2vh 0;
     color: #b4b4b4;
   }
 
-  .active {
-    display: block;
-    border-left 2px solid red;
-    border-top 2px solid red;
-    border-right 2px solid red;
+  .tab_active {
+    border-left: 1.5px solid red;
+    border-top: 1.5px solid red;
+    border-right: 1.5px solid red;
     color: red;
   }
 
-  .tabcontent {
+  .tab_list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #b4b4b4
+  }
+
+  .tab_content {
     display: none;
     padding: 1.5vh 2vw;
     border-top: 1px solid red;
     line-height: 2em;
     font-size: 0.9em;
+    box-sizing: border-box;
+  }
+
+  .tab_content:first-child {
+    display: block;
   }
 
   .item03_qmenuwrap {
@@ -255,7 +270,7 @@
 
   .item05_img,
   .item06_img {
-    widows: 100%;
+    width: 100%;
     text-align: center;
   }
 
