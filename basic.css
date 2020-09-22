@@ -237,9 +237,9 @@ body {
 
   .main_prologue h2 {
     line-height: 5vh;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #494949;
+    color: #292929;
     font-family: rubik;
   }
 
@@ -396,8 +396,8 @@ body {
   }
 
   #menu_tit_contact {
-    color: white;
-    text-shadow: 0 0 2px #696969,
+    color: black;
+    text-shadow: 0 0 2px #fff,
       0 0 10px whitesmoke;
   }
 
@@ -405,9 +405,9 @@ body {
     padding-top: 0;
     padding-bottom: 4vh;
     text-align: center;
-    font-size: 1.6em;
-    color: white;
-    text-shadow: 0 0 2px #696969,
+    font-size: 1.5em;
+    color: black;
+    text-shadow: 0 0 2px #fff,
       0 0 10px whitesmoke;
   }
 
@@ -417,10 +417,10 @@ body {
   }
 
   .contact_desc li {
-    padding: 0.5vh 0;
-    font-size: 1.2em;
-    color: white;
-    text-shadow: 0 0 2px black,
+    padding: 0.7vh 0;
+    font-size: 1.15em;
+    color: black;
+    text-shadow: 0 0 2px #fff,
       0 0 10px whitesmoke;
   }
 
@@ -595,6 +595,12 @@ body {
     margin-top: 2vh;
   }
 
+  /* 태블릿용(min768) : Contact */
+  .contact_desc li {
+    padding: 0.7vh 0;
+    font-size: 1.4em;
+  }
+
   /* 태블릿용(min768) : footer */
   .footer_wrap {
     padding: 2% 3%;
@@ -641,6 +647,11 @@ body {
 @media only screen and (min-width: 1024px) {
 
   /* PC Web용 (min1024) : GNB 메뉴바*/
+
+  .gnb_menu_web li {
+    font-size: 1.2rem;
+  }
+
   .gnb_menu_web li:hover {
     text-shadow: 2px 2px 8px gray;
   }
@@ -648,6 +659,18 @@ body {
   /* PC Web용 (min1024) : 공통적용사항 */
   .menu_tit {
     padding: 7vh 0;
+  }
+
+  /* PC Web용 (min1024) : main */
+  .main_prologue {
+    padding-top: 34vh;
+  }
+
+  .main_prologue h2 {
+    line-height: 6.2vh;
+    font-size: 2.4em;
+    color: #292929;
+    font-family: rubik;
   }
 
   /* PC Web용 (min1024) : About */
@@ -820,7 +843,7 @@ body {
 
   #menu_tit_contact {
     /* padding-top: 0; */
-    padding-bottom: 3.5vh;
+    padding-bottom: 3vh;
   }
 
   .contact_wrap {
