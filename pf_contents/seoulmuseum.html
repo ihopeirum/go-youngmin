@@ -195,7 +195,7 @@
     <section class="item06 contents_item">
       <div class="left">
         <p class="item_tit">팝업존</p>
-        <span>+</span>
+        <!-- <span>+</span> -->
       </div>
       <div class="right">
         <div class="page">1/1</div>
@@ -211,37 +211,39 @@
     </section>
 
     <section class="item07 contents_item">
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'donate')">기증유물</button>
-        <button class="tablinks" onclick="openTab(event, 'main')">주요유물</button>
-        <button class="tablinks" onclick="openTab(event, 'collection')">소장유물</button>
+      <div class="tab_img_wrap">
+        <div class="tab_img tab_imgActive" data-imgtabnum="0"><a href="#">기증유물</a></div>
+        <div class="tab_img" data-imgtabnum="1"><a href="#">주요유물</a></div>
+        <div class="tab_img" data-imgtabnum="2"><a href="#">소장유물</a></div>
       </div>
 
-      <div id="donate" class="tabcontent">
-        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
-        <div class="mid_img">
-          <img src="img/smh_item07.jpg" alt="">
-          <p>기증유물</p>
+      <div class="tab_img_cntr">
+        <div id="donate" class="tab_img_con">
+          <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+          <div class="mid_img">
+            <img src="img/smh_item07.jpg" alt="">
+            <p>기증유물</p>
+          </div>
+          <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
         </div>
-        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
-      </div>
 
-      <div id="main" class="tabcontent">
-        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
-        <div class="mid_img">
-          <img src="img/smh_item07.jpg" alt="">
-          <p>주요유물</p>
+        <div id="main" class="tab_img_con">
+          <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+          <div class="mid_img">
+            <img src="img/smh_item07_b.jpg" width="70%" alt="">
+            <p>주요유물</p>
+          </div>
+          <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
         </div>
-        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
-      </div>
 
-      <div id="collection" class="tabcontent">
-        <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
-        <div class="mid_img">
-          <img src="img/smh_item07.jpg" alt="">
-          <p>소장유물</p>
+        <div id="collection" class="tab_img_con">
+          <div class="btn_left"><img src="img/btn_prev.png" alt=""></div>
+          <div class="mid_img">
+            <img src="img/smh_item07_c.jpg" alt="">
+            <p>소장유물</p>
+          </div>
+          <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
         </div>
-        <div class="btn_right"><img src="img/btn_next.png" alt=""></div>
       </div>
 
     </section>
@@ -306,21 +308,6 @@
     </div>
   </footer>
 
-  <!-- <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script> -->
 </body>
 
 </html>

@@ -1,7 +1,9 @@
 window.onload = function () {
 
   var tabList = document.querySelectorAll(".tab_list_wrap .tab_list")
+  var tabImg = document.querySelectorAll(".tab_img_wrap .tab_img")
 
+  //TAB 1 - .item03
   Array.prototype.forEach.call(tabList, function (list) {
     list.children[0].addEventListener('click', function (e) {
       e.preventDefault();
@@ -22,6 +24,26 @@ window.onload = function () {
 
       if (list.className.indexOf('tab_active') == -1) {
         list.className = 'tab_list tab_active'
+      }
+    });
+  });
+
+  //TAB 2 - .item07
+  Array.prototype.forEach.call(tabImg, function (imglist) {
+    imglist.children[0].addEventListener('click', function (e) {
+      e.preventDefault();
+
+      var tabContent = document.querySelectorAll(".tab_img_cntr .tab_img_con")
+      var tabNum = this.parentElement.getAttribute('data-imgtabnum')
+
+      Array.prototype.forEach.call(tabContent, function (cont, i) {
+        cont.style.display = 'none'
+        tabImg[i].className = 'tab_img'
+      })
+      tabContent[tabNum].style.display = 'block'
+
+      if (imglist.className.indexOf('tab_imgActive') == -1) {
+        imglist.className = 'tab_img tab_imgActive'
       }
     });
   });

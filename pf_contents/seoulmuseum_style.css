@@ -17,8 +17,8 @@
 
 .seoul_menu_ul li {
   display: inline-block;
-  padding-left: 2vw;
-  font-size: 0.95em;
+  padding-left: 0.5vw;
+  font-size: 0.8rem;
 }
 
 /* ***GNB 최소sz 기본 */
@@ -155,12 +155,11 @@
     margin: 0 auto;
   }
 
-  /* ***min320 item03 */
+  /* ***min320 item03 - TAB 1 */
 
   .tab_list_wrap {
     border-top: 1px solid silver;
     box-sizing: border-box;
-    /* background-color: whitesmoke; */
   }
 
   .tab_list {
@@ -176,10 +175,8 @@
   }
 
   .tab_active {
-    border-left: 1.5px solid red;
-    border-top: 1.5px solid red;
-    border-right: 1.5px solid red;
-    color: red;
+    border: 1.5px solid red;
+    border-bottom: none;
   }
 
   .tab_list a {
@@ -265,7 +262,7 @@
   }
 
   .right {
-    margin-left: 40vw;
+    margin-left: 55vw;
   }
 
   .item05_img,
@@ -285,12 +282,47 @@
 
   /* ***min320 item07 */
 
-  #donate,
-  #main,
-  #collection {
-    display: flex;
-    align-items: stretch;
+  .tab_img_wrap {
+    border: 1px solid silver;
+    border-bottom: 1.5px solid #606060;
+    box-sizing: border-box;
+    /* background-color: whitesmoke; */
+  }
+
+  .tab_img {
+    background-color: inherit;
+    display: inline-block;
+    width: 32.4%;
+    text-align: center;
+    cursor: pointer;
+    padding: 1.2vh 0;
+    color: #b4b4b4;
+  }
+
+  .tab_imgActive {
+    border-bottom: 3px solid red;
+    /* color: red; */
+  }
+
+  .tab_img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #606060;
+  }
+
+  .tab_img_con {
+    display: none;
+    padding: 1.5vh 2vw;
+    line-height: 2em;
+    font-size: 0.9em;
+    box-sizing: border-box;
     background-color: whitesmoke;
+  }
+
+  .tab_img_con:first-child {
+    display: block;
   }
 
   .mid_img {
@@ -301,22 +333,28 @@
   .item08 {
     width: 90vw;
     display: flex;
+    /* align-items: center; */
   }
 
   .item08_item {
     text-align: center;
     border: 1px solid silver;
     flex: 1 1 25%;
-    padding-top: 1.5vh;
+  }
+
+  .item08_item:hover {
+    box-shadow: 2px 4px 10px silver;
+    cursor: pointer;
   }
 
   .item08_item img {
-    height: 40%;
+    height: 35%;
+    padding-top: 2.5vh;
   }
 
   .item08_tit {
     padding-top: 1vh;
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
 
   /* ***min320 item09 */
@@ -325,7 +363,7 @@
   }
 
   .item09 img {
-    padding: 4vh 2vw;
+    padding: 3vh 2vw;
   }
 
   /* ***min320 partners */
@@ -364,6 +402,8 @@
   .fnb_wrap ul li {
     display: inline-block;
     line-height: 1.5em;
+    font-size: 0.9em;
+    padding: 0 1vw;
   }
 
   .familysite {
