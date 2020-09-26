@@ -1,10 +1,42 @@
+@charset "utf-8";
+
 /* 기본 공통적용 사항 */
 html,
 body {
-  height: 100%;
+  width: 100%;
+  height: auto;
   margin: 0;
 }
+#skip {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
+#skip>a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  font-weight: 600;
+  font-size: 0;
+  padding: 0;
+}
+
+#skip>a:focus {
+  font-size: 20px;
+  padding: 15px 0;
+  border: 2px solid #000;
+}
+
+#header{
+  z-index: 3;
+}
 .gnb_web,
 .ft_logo_web {
   display: none;
@@ -22,9 +54,12 @@ body {
   -o-background-size: cover;
 }
 
-.main {
+#main{
+  z-index: 2;
+}
+.prologue {
   background-image: url(img/bg_mainS.jpg);
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .portfolio {
@@ -187,6 +222,10 @@ body {
   font-weight: bold;
 }
 
+#footer{
+  z-index: 1;
+}
+
 @media only screen and (min-width: 320px) {
 
   /* 모바일용(min320) : 공통적용사항 */
@@ -229,13 +268,13 @@ body {
   }
 
   /* 모바일용(min320) : main */
-  .main_prologue {
+  .prologue_cont {
     margin: 0 auto;
     text-align: center;
     padding-top: 36vh;
   }
 
-  .main_prologue h2 {
+  .prologue_cont h2 {
     line-height: 5vh;
     font-size: 1.5em;
     font-weight: bold;
@@ -673,11 +712,11 @@ body {
   }
 
   /* PC Web용 (min1024) : main */
-  .main_prologue {
+  .prologue_cont {
     padding-top: 34vh;
   }
 
-  .main_prologue h2 {
+  .prologue_cont h2 {
     line-height: 6.2vh;
     font-size: 2.4em;
     color: #292929;

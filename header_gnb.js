@@ -25,7 +25,7 @@ $(document).ready(function () {
   // ++++++++ menu offset ++++++++
 
   $(gototop).click(function () {
-    position = $(".main_prologue").offset();
+    position = $(".prologue_cont").offset();
     $("body,html").stop().animate({
       scrollTop: position.top
     }, 1000);
