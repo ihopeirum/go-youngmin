@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.mainWrap{
+  height: 100vh;
+  background-image: url(img/fuji_picsofthemonth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainHead{width: 100%; text-align: center;}
+.mainHead img{width:200px;padding-top: 2vh}
+.mainContent{padding-top: 2vh; height: 72vh;}
+.mainMenu{
+  width: 100%;
+  height: 18vh;
+  text-align: center; 
+  border-bottom:2px solid white;
+}
+.mainMenu h2{padding-top: 3vh;}
+
+#footer {
+  padding-top: 6vh;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
+
+/* 태블릿  */
+@media all and (min-width:768px){
+  .mainHead img {padding-top: 4vh}
+  .mainMenu h2 {padding-top: 4vh;}
+  #footer {padding-top: 8vh;}
+}
+
+/* PC Web */
+@media all and (min-width:1024px) {
+  .mainWrap {width: 100%; position: relative; overflow: hidden;}
+  .mainWrap_weAre {background-image: url(img/test1.jpg); transition: all 0.5s;}
+  .mainWrap_nature {background-image: url(img/test2.jpg);transition: all 0.5s;}
+  .mainWrap_culture {background-image: url(img/test3.jpg);transition: all 0.5s;}
+  .mainWrap_diary {background-image: url(img/test4.jpg);transition: all 0.5s;}
+  .mainHead {width: 200px; text-align: left; position: absolute; top: 2%; left: 2%; }
+  .mainHead img {padding-top: 0}
+  
+  .mainContent {
+    padding-top: 0;
+    text-align: center;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .mainMenu {
+    display: inline-block;
+    width: 20%;
+    height: 100vh;
+    border:none;
+    border-left: 2px solid whitesmoke;
+  }
+
+  .mainMenu h2 {padding: 440px 0; font-size: 1.5rem;}
+  .mainMenu:last-child {border-right: 2px solid whitesmoke;}
+
+  #footer {
+    padding-top:0;
+    position: absolute;
+    top: 95%;
+    left: 41%;
+    color: #999999;
+  }
+}

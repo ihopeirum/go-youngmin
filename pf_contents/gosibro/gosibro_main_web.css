@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.mainWrap{
+  width:100%; 
+  height:100vh; 
+  /* background-color:lightgray;  */
+  position: relative;
+  background-image: url(img/fuji_picsofthemonth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainHead{width: 200px; position: absolute; top:2.5%; left:1%;}
+.mainContent{
+  text-align: center;
+  width: 70%;
+  margin:0 auto;
+}
+.mainMenu{
+  display: inline-block;
+  height:100vh;
+  width: 24.6%;
+  border-left: 2px solid whitesmoke;
+  font-size: 0;
+}
+.mainMenu h2{padding: 134% 0;font-size: 1.6rem;}
+.mainMenu:last-child{border-right: 2px solid whitesmoke;}
+#footer{position: absolute;top:94%; left:41%;color:#595959}
