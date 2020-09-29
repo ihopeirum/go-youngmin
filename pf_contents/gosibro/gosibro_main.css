@@ -2,9 +2,10 @@
 
 .mainWrap{
   height: 100vh;
-  background-image: url(img/fuji_picsofthemonth.jpg);
+  background-image: url(img/sibro1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .mainHead{width: 100%; text-align: center;}
 .mainHead img{width:200px;padding-top: 2vh}
@@ -15,7 +16,11 @@
   text-align: center; 
   border-bottom:2px solid white;
 }
-.mainMenu h2{padding-top: 3vh;}
+.mainMenu h2 {
+  padding-top: 3vh;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
 
 #footer {
   padding-top: 6vh;
@@ -27,17 +32,17 @@
 /* 태블릿  */
 @media all and (min-width:768px){
   .mainHead img {padding-top: 4vh}
-  .mainMenu h2 {padding-top: 4vh;}
+  .mainMenu h2 {padding-top: 2vh; font-size: 2rem;}
   #footer {padding-top: 8vh;}
 }
 
 /* PC Web */
 @media all and (min-width:1024px) {
   .mainWrap {width: 100%; position: relative; overflow: hidden;}
-  .mainWrap_weAre {background-image: url(img/test1.jpg); transition: all 0.5s;}
-  .mainWrap_nature {background-image: url(img/test2.jpg);transition: all 0.5s;}
-  .mainWrap_culture {background-image: url(img/test3.jpg);transition: all 0.5s;}
-  .mainWrap_diary {background-image: url(img/test4.jpg);transition: all 0.5s;}
+  .mainWrap_weAre {background-image: url(img/sibro1.jpg); transition: all 0.5s;}
+  .mainWrap_nature {background-image: url(img/nature1.jpg);transition: all 0.5s;}
+  .mainWrap_culture {background-image: url(img/culture1.jpg);transition: all 0.5s;}
+  .mainWrap_diary {background-image: url(img/diary1.jpg);transition: all 0.5s;}
   .mainHead {width: 200px; text-align: left; position: absolute; top: 2%; left: 2%; }
   .mainHead img {padding-top: 0}
   
@@ -57,7 +62,12 @@
     border-left: 2px solid whitesmoke;
   }
 
-  .mainMenu h2 {padding: 440px 0; font-size: 1.5rem;}
+  .mainMenu h2 {
+    padding: 440px 0;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
   .mainMenu:last-child {border-right: 2px solid whitesmoke;}
 
   #footer {
