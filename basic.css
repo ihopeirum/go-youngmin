@@ -59,6 +59,7 @@ body {
 }
 .prologue {
   background-image: url(img/bg_mainS.jpg);
+  background-position: center;
   min-height: 100vh;
 }
 
