@@ -1,1 +1,22 @@
 @charset "utf-8";
+.content_wrap{
+  width:80%;
+  height: 90vh; 
+  padding-top: 10vh;
+  margin:0 auto;
+  /* background-color:khaki; */
+}
+.sibro_pic {
+  display: inline-block;
+}
+
+.sibro_pic img{
+  width: 400px;
+  height: 400px;
+  padding-top: 25vh;
+  vertical-align: text-bottom;
+}
+
+.sibro_desc{display: inline-block;}
+.sibro_tit, .go_tit{font-size: 4rem; padding: 5vh 0;}
+.sibro_txt {font-size: 2rem; line-height: 6vh;}
