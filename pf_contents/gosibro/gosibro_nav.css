@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+body{}
+#skip {position: relative;}
+#skip a{position: absolute; top: -35px; left: 0;}
+#skip a:focus,
+#skip a:active{position : absolute; top:0; left:0;}
+
+#header {width: 100%; box-shadow: 0 0 12px silver; background-color: rgba(245,245,245,0.5); position: fixed;}
+
+@media only screen and (min-width: 320px) {
+  .gnb_wrap {margin: 0 auto; text-align: center; }
+  .gnb_flexcont{display:inline-block;}
+  .gnb_logo {width: 160px; display: inline-block; padding: 1.5vh 0;}
+  .gnb_logo img{width: 100%; vertical-align: bottom;}
+
+  #nav{display: none;}
+
+  .mobileNav {
+    float: right;
+    position: relative;
+    cursor:pointer;
+    margin-top: 35px;
+    margin-right: 25px;
+    width: 34px;
+    height: 18px;
+    transition: all 0.6s;
+  }
+
+  .mobileNav.addFixed {margin-top: 35px; margin-right: 25px; transition: all 0.6s;}
+  .gnb3-wrap {position: relative; width: 100%; height: 100%;}
+  .gnbline {position: absolute; left: 0; height: 2px; width: 100%; background: #494949;}
+  .gnbline0 {top: 0;}
+  .gnbline0.aniMobileBt { top: 50%; margin-top: -1px; transform: rotate(45deg); transition: all 0.3s; }
+  .gnbline1 { top: 50%; margin-top: -1px; transition: all 0.1s; }
+  .gnbline1.aniMobileBt { left: 200%; transition: all 0.1s; }
+  .gnbline2 { bottom: 0; }
+  .gnbline2.aniMobileBt { bottom: 50%; margin-bottom: -1px; transform: rotate(-45deg); transition: all 0.3s; }
+
+  .mob_nav_wrap{text-align: center; display: none;}
+  .mob_nav_wrap li{padding-top: 10vh;}
+  .mob_nav_wrap li:last-child {padding-bottom: 10vh;}
+  .mob_nav_wrap a{font-size: 1.6rem;}
+}
+
+@media only screen and (min-width: 768px) {
+  .mob_nav, .mobileNav { display: none; }
+  .gnb_wrap {width: 100%; margin: 0 auto;}
+  .gnb_flexcont {display: flex;}
+  .gnb_logo {width: 160px;}
+  .gnb_logo img {width: 100%;}
+  #nav {display:block; flex-grow: 1;}
+  .nav_flexcont {display: flex; justify-content: space-around; line-height: 90px;}
+  .nav_wrap a {font-size: 1.2rem;}
+}
+
+@media only screen and (min-width: 1024px) {
+  .gnb_wrap {width: 80%; text-align: center;}
+}
