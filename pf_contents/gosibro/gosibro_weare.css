@@ -1,22 +1,52 @@
 @charset "utf-8";
-.content_wrap{
-  width:80%;
-  height: 90vh; 
-  padding-top: 10vh;
-  margin:0 auto;
-  /* background-color:khaki; */
-}
-.sibro_pic {
-  display: inline-block;
+@font-face {font-family: rubik; src: url(font/Rubik-Regular.woff)}
+
+body{font-family: rubik;}
+
+@media only screen and (min-width:320px) {
+  .content_wrap{width: 100%;}
+  .sibro_pic img {width: 100%; height: auto; padding-top: 21vh;}
+  .sibro_desc, .go_desc {padding: 0 4%;}
+  .sibro_tit, .go_tit { font-size: 2.4rem; padding: 3.5vh 0;}
+  .sibro_txt{font-size: 1.3rem; line-height: 2.5rem;}
+  #bro_wrap{display: flex;flex-direction: column-reverse;}
+  #bro_img, #go_wrap {padding-top: 9vh;}
+  .go_desc dl{font-size: 1.3rem; line-height: 2.5rem; letter-spacing: 0.2rem;}
+  .go_desc dt {font-size: 1.2rem; font-weight: bold; line-height: 2.5rem; letter-spacing: 0.1rem; text-transform: uppercase;}
+  .go_desc dd {font-size: 1.1rem; line-height: 1.5rem; letter-spacing: 0.1rem;}
+
+  /* #footer {box-shadow: 0 0 12px silver; background-color: rgba(245, 245, 245, 1); margin-top: 9vh}
+  .footer_wrap{padding: 4%;}
+  .contact, .copyright{font-size: 0.9rem; text-align: center;line-height: 1.2rem;}
+  .contact img{width: 11%; margin:2% 4%;} */
 }
 
-.sibro_pic img{
-  width: 400px;
-  height: 400px;
-  padding-top: 25vh;
-  vertical-align: text-bottom;
+@media only screen and (min-width:768px) {
+  .sibro_pic img {padding-top: 0vh;}
+  .sibro_tit, .go_tit {font-size: 3rem; padding: 3vh 0;}
+  .sibro_txt {font-size: 1.5rem; line-height: 3rem;}
+  #bro_img {padding-top: 5vh}
+  .go_desc dl {font-size: 1.6rem;}
+  .go_desc dt {font-size: 1.5rem; letter-spacing: 0.16rem;}
+  .go_desc dd {font-size: 1.3rem; letter-spacing: 0.16rem;}
+  /* #footer{margin-top: 6vh;}
+  .footer_wrap {padding: 2%;}
+  .contact, .copyright {font-size: 1.1rem;line-height: 1.4rem;}
+  .contact img {width: 8%; margin: 2% 4%;} */
+
 }
 
-.sibro_desc{display: inline-block;}
-.sibro_tit, .go_tit{font-size: 4rem; padding: 5vh 0;}
-.sibro_txt {font-size: 2rem; line-height: 6vh;}
+@media only screen and (min-width:1024px){
+  .content_wrap, #bro_wrap {display: block; width: 80%; padding-top: 14vh; margin: 0 auto; text-align: center;}
+  .sibro_pic {display: inline-block;}
+  .sibro_pic img{width: 500px; height: 500px; padding-top: 15vh; vertical-align: bottom;}
+  .sibro_desc{display: inline-block;}
+  .sibro_tit, .go_tit{font-size: 3.5rem; padding: 5vh 0;}
+  .sibro_txt {font-size: 1.8rem; line-height: 6vh;}
+  #go_wrap{padding: 15vh 0;}
+  .go_desc dl { font-size: 1.8rem; line-height: 5rem;}
+  .go_desc dt { font-size: 1.6rem; line-height: 4rem;}
+  .go_desc dd { font-size: 1.6rem; line-height: 2rem;}
+  .footer_wrap {padding-top: 1%}
+  .contact img { width: 3%; margin: 1% 2%; }
+ }

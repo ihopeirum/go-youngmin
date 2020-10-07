@@ -1,17 +1,41 @@
 @charset "utf-8";
+@font-face {font-family: rubik; src: url(font/Rubik-Regular.woff)}
 
-body{}
+body{font-family: rubik;}
 #skip {position: relative;}
 #skip a{position: absolute; top: -35px; left: 0;}
 #skip a:focus,
 #skip a:active{position : absolute; top:0; left:0;}
 
-#header {width: 100%; box-shadow: 0 0 12px silver; background-color: rgba(245,245,245,0.5); position: fixed;}
+#header {
+  width: 100%; 
+  /* box-shadow: 0 0 12px silver;  */
+  background-color: rgba(245, 245, 245, 1);
+  box-shadow: 0 1px 1px rgba(192, 192, 192, 0.11),
+  0 2px 2px rgba(192, 192, 192, 0.11),
+  0 4px 4px rgba(192, 192, 192, 0.11),
+  0 8px 8px rgba(192, 192, 192, 0.11),
+  0 16px 16px rgba(192, 192, 192, 0.11),
+  0 32px 32px rgba(192, 192, 192, 0.11);
+  
+  position: fixed;
+}
+#footer {
+  /* box-shadow: 0 0 12px silver; */
+  background-color: rgba(245, 245, 245, 1);
+  box-shadow: 0 -1px 1px rgba(192, 192, 192, 0.11),
+  0 -2px 2px rgba(192, 192, 192, 0.11),
+  0 -4px 4px rgba(192, 192, 192, 0.11),
+  0 -8px 8px rgba(192, 192, 192, 0.11),
+  0 -16px 16px rgba(192, 192, 192, 0.11),
+  0 -32px 32px rgba(192, 192, 192, 0.11);
+  margin-top: 9vh
+}
 
 @media only screen and (min-width: 320px) {
   .gnb_wrap {margin: 0 auto; text-align: center; }
   .gnb_flexcont{display:inline-block;}
-  .gnb_logo {width: 160px; display: inline-block; padding: 1.5vh 0;}
+  .gnb_logo {width: 160px; display: inline-block;}
   .gnb_logo img{width: 100%; vertical-align: bottom;}
 
   #nav{display: none;}
@@ -41,6 +65,10 @@ body{}
   .mob_nav_wrap li{padding-top: 10vh;}
   .mob_nav_wrap li:last-child {padding-bottom: 10vh;}
   .mob_nav_wrap a{font-size: 1.6rem;}
+
+  .footer_wrap { padding: 4%; }
+  .contact, .copyright { font-size: 0.9rem; text-align: center; line-height: 1.2rem; }
+  .contact img { width: 11%; margin: 2% 4%;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,10 +78,19 @@ body{}
   .gnb_logo {width: 160px;}
   .gnb_logo img {width: 100%;}
   #nav {display:block; flex-grow: 1;}
-  .nav_flexcont {display: flex; justify-content: space-around; line-height: 90px;}
-  .nav_wrap a {font-size: 1.2rem;}
+  .nav_flexcont {display: flex; justify-content: space-around; line-height: 85px;}
+  .nav_wrap a {font-size: 1.6rem;}
+  #footer { margin-top: 6vh;}
+  .footer_wrap { padding: 2%;}
+  .contact, .copyright { font-size: 1.1rem; line-height: 1.4rem;}
+  .contact img { width: 8%; margin: 2% 4%;}
 }
 
 @media only screen and (min-width: 1024px) {
   .gnb_wrap {width: 80%; text-align: center;}
+  .nav_wrap a { font-size: 1.25rem;}
+  .nav_wrap a:hover {text-shadow: 0 0 3px #808080; transition: all 0.1s;}
+  .footer_wrap { padding-top: 1%}
+  .contact img { width: 3%; margin: 1% 2%;}
+  .contact a:hover{ opacity:0.65; transition: all 0.1s;}
 }

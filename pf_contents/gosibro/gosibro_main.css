@@ -1,4 +1,7 @@
 @charset "utf-8";
+@font-face {font-family: rubik; src: url(font/Rubik-Regular.woff)}
+
+body {font-family: rubik;}
 
 .mainWrap{
   height: 100vh;
